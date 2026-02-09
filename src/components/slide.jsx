@@ -10,6 +10,9 @@ import { GoArrowRight } from "react-icons/go";
 import { FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { MdMarkEmailRead } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { GrLinkedin } from "react-icons/gr";
 
 const SSlide = () => {
   return (
@@ -47,7 +50,7 @@ const SSlide = () => {
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 100, damping: 30 }}
               className="font-bold mb-3 text-2xl md:text-4xl text-center md:text-left
-              bg-gradient-to-r from-primary via-teal to-gold text-transparent bg-clip-text"
+              text-gray-600"
             >
               ASKERS JOHN
             </motion.h1>
@@ -57,9 +60,10 @@ const SSlide = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 100, damping: 30 }}
-              className="text-lg md:text-2xl font-semibold text-center md:text-left"
+              className="text-lg md:text-2xl font-semibold text-center md:text-left text-gray-400"
             >
-              Cab & Travel Services in Tiruchendur, Thoothukudi & Tirunelveli
+              Brand & Digital Marketing Manager – Multi-Brand Nutrition
+              Portfolio
             </motion.h2>
 
             <motion.p
@@ -67,14 +71,12 @@ const SSlide = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 100, damping: 30 }}
-              className="mt-4 text-gray-700 text-sm md:text-base"
+              className="mt-4 text-gray-700 text-sm md:text-base "
             >
-              Welcome to Shanmuga Travels, your trusted local cab and travel
-              service provider with over 10+ years of experience. We offer
-              comfortable and reliable pickup & drop services, pilgrimage trips,
-              sightseeing tours, and local travel across{" "}
+              Professional Summary: Driving 50%+ annual revenue growth for
+              multi-brand supplement portfolios across{" "}
               <span className="text-primary font-semibold">
-                Tiruchendur, Thoothukudi, and Tirunelveli.
+                Amazon, DTC, and retail marketplaces.
               </span>
             </motion.p>
           </div>
@@ -82,10 +84,13 @@ const SSlide = () => {
           {/* FEATURES */}
           <div className="hidden md:grid md:grid-cols-3 gap-4 mt-7 -ml-60 z-30">
             {[
-              { icon: <FaCar size={26} />, label: "Address Pickup" },
-              { icon: <LuPlane size={26} />, label: "Airport Transfer" },
-              { icon: <GiPathDistance size={26} />, label: "Long Distance" },
-              { icon: <MdHotelClass size={26} />, label: "Taxi Tours" },
+              {
+                icon: <MdMarkEmailRead size={26} />,
+                label: "askerantony@live.com",
+              },
+              { icon: <FaPhoneAlt size={26} />, label: "437-339-7365" },
+              { icon: <GrLinkedin size={26} />, label: "linedin" },
+              // { icon: <MdHotelClass size={26} />, label: "Taxi Tours" },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -98,7 +103,7 @@ const SSlide = () => {
                   damping: 30,
                   delay: index * 0.1,
                 }}
-                className="flex items-center gap-3 bg-white border p-4 rounded-xl shadow-sm"
+                className="flex items-center gap-3 bg-white border border-gray-600 p-4 rounded-xl shadow-sm"
               >
                 {item.icon}
                 <p className="text-lg font-medium">{item.label}</p>

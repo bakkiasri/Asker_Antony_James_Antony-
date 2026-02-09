@@ -52,8 +52,8 @@ export default function Navbar() {
                   className={`px-3 py-1 rounded-lg font-semibold transition
                     ${
                       isActive
-                        ? "bg-gradient-to-r from-teal-600 via-teal-500 to-emerald-400 text-white"
-                        : "text-black hover:text-teal-600 hover:bg-gray-100"
+                        ? "bg-gray-100 text-gray-900"
+                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
                     }`}
                 >
                   {item.name}
