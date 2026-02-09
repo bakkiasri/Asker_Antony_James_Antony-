@@ -32,25 +32,25 @@ const SSlide = () => {
           className="md:w-1/2 flex justify-center"
         >
           <Image
-            src="/images/kabuto-imae.avif"
+            src="/kabuto-imae.avif"
             alt="Shanmuga Travels"
             width={500}
             height={400}
             priority
-            className="h-80 w-72 md:h-[500px] md:w-[400px] rounded-2xl object-cover"
+            className="h-80 w-72 md:h-[500px] md:w-[400px] rounded-xl shadow-2xl object-cover"
           />
         </motion.div>
 
         {/* CONTENT */}
-        <div className="md:w-1/2 flex flex-col mt-5 md:mt-5 items-start">
-          <div className="max-w-xl w-full">
+        <div className="md:w-1/2 flex flex-col mt-5 md:mt-5 space-y-3 items-start">
+          <div className="flex flex-col max-w-xl space-y-7 w-full">
             <motion.h1
               initial={{ x: 60, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true }}
               transition={{ type: "spring", stiffness: 100, damping: 30 }}
               className="font-bold mb-3 text-2xl md:text-4xl text-center md:text-left
-              text-gray-600"
+              text-gray-600 "
             >
               ASKERS JOHN
             </motion.h1>
@@ -103,7 +103,7 @@ const SSlide = () => {
                   damping: 30,
                   delay: index * 0.1,
                 }}
-                className="flex items-center gap-3 bg-white border border-gray-600 p-4 rounded-xl shadow-sm"
+                className="flex items-center gap-3 bg-white border border-gray-100 p-4 rounded-xl shadow-xl"
               >
                 {item.icon}
                 <p className="text-lg font-medium">{item.label}</p>
