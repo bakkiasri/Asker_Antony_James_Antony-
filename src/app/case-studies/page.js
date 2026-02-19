@@ -1,3 +1,18 @@
+"use client";
+
+import * as React from "react";
+import {
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+  Grid,
+  Container,
+  Box,
+} from "@mui/material";
+
 export default function CaseStudies() {
   const caseStudies = [
     {
@@ -6,101 +21,134 @@ export default function CaseStudies() {
         "Managed 6 supplement brands with unique positioning and strategy.",
         "Executed 50+ campaigns annually across Amazon Ads, Google Ads, and social media.",
         "Improved SEO rankings and organic traffic consistently.",
-        "Coordinated seasonal campaigns and discount structures.",
-        "Managed email workflows to improve retention and repeat purchases.",
       ],
     },
     {
       title: "E-Commerce Platform Management",
       points: [
-        "Oversaw 6+ platforms (Amazon, eBay, Walmart, Shopify, WooCommerce, BigCommerce).",
+        "Oversaw 6+ platforms (Amazon, eBay, Walmart, Shopify).",
         "Optimized 200+ product listings including A+ content.",
-        "Relaunched key products with rebranded creatives.",
         "Managed POS integrations and backend systems.",
-        "Optimized logistics workflow using ShipStation.",
       ],
     },
     {
       title: "Team Leadership & Training",
       points: [
-        "Led a team of 8 across marketing, e-commerce, and support.",
+        "Led a team of 8 across marketing and support.",
         "Conducted weekly KPI strategy meetings.",
-        "Trained juniors on customer support and refund processes.",
-        "Supervised onboarding for 3+ new hires.",
-        "Managed remote productivity scheduling.",
+        "Supervised onboarding for new hires.",
       ],
     },
     {
       title: "Corporate & Cross-Functional Coordination",
       points: [
         "Coordinated with HR, management, and vendors.",
-        "Managed Facebook Business Ads and Amazon SAS Core accounts.",
-        "Handled corporate communications and vendor follow-ups.",
-        "Facilitated employee onboarding and access setup.",
-        "Represented company in Amazon strategic exit programs.",
-      ],
-    },
-    {
-      title: "Creative & Branding Development",
-      points: [
-        "Developed brand slogans and positioning strategies.",
-        "Enhanced product descriptions with compliant copy.",
-        "Reviewed packaging improvements and visual creatives.",
-        "Curated mood boards for rebranding projects.",
-        "Oversaw Amazon A+ content and storefront redesigns.",
-      ],
-    },
-    {
-      title: "International Market Expansion",
-      points: [
-        "Coordinated U.S. & U.K. Amazon catalog compliance.",
-        "Adjusted global pricing strategies.",
-        "Explored China market entry strategies.",
-        "Supported export compliance and vendor coordination.",
-      ],
-    },
-    {
-      title: "Project & Process Management",
-      points: [
-        "Managed 3+ major website redevelopment projects.",
-        "Hosted cross-team stakeholder meetings.",
-        "Coordinated product relaunch timelines.",
-        "Built structured trackers for PR and campaigns.",
-      ],
-    },
-    {
-      title: "Business Development & Side Ventures",
-      points: [
-        "Conceptualized The Projects Lab (SEO & digital firm).",
-        "Researched payment solutions for small businesses.",
-        "Evaluated service-based revenue models.",
-        "Conducted competitor analysis and market research.",
+        "Managed Facebook Ads and Amazon SAS accounts.",
+        "Handled vendor communications.",
       ],
     },
   ];
 
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold mb-8 text-center">Case Studies</h1>
+    <Box
+      sx={{
+        py: { xs: 6, sm: 8, md: 12 },
+      }}
+    >
+      <Container maxWidth="xl">
+        {/* Heading */}
+        <Typography
+          variant="h4"
+          align="center"
+          fontWeight="bold"
+          gutterBottom
+          sx={{
+            mb: { xs: 4, md: 8 },
+            fontSize: { xs: "1.8rem", sm: "2.2rem", md: "2.5rem" },
+          }}
+        >
+          Case Studies
+        </Typography>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {caseStudies.map((item, index) => (
-          <div
-            key={index}
-            className="bg-white shadow-lg rounded-2xl p-6 border border-gray-100 hover:shadow-xl hover:-translate-y-1 transition duration-300"
-          >
-            <h2 className="text-lg font-semibold text-gray-800 mb-4">
-              {item.title}
-            </h2>
+        <Grid container spacing={{ xs: 3, sm: 4 }}>
+          {caseStudies.map((item, index) => (
+            <Grid
+              item
+              key={index}
+              xs={12} // 1 column mobile
+              sm={6} // 2 columns tablet
+              md={4} // 3 columns desktop
+              lg={3} // 4 columns large screens
+            >
+              <Card
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  flexDirection: "column",
+                  borderRadius: 4,
+                  boxShadow: 2,
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    boxShadow: 10,
+                    transform: "translateY(-8px)",
+                  },
+                }}
+              >
+                <CardMedia
+                  component="img"
+                  image="https://images.unsplash.com/photo-1556761175-b413da4baf72"
+                  alt={item.title}
+                  sx={{
+                    height: { xs: 160, sm: 180, md: 200 },
+                  }}
+                />
 
-            <ul className="list-disc pl-5 space-y-2 text-gray-600 text-sm leading-relaxed">
-              {item.points.map((point, i) => (
-                <li key={i}>{point}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
-      </div>
-    </div>
+                <CardContent sx={{ flexGrow: 1 }}>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: 600,
+                      mb: 1,
+                      fontSize: { xs: "1rem", sm: "1.1rem" },
+                    }}
+                  >
+                    {item.title}
+                  </Typography>
+
+                  <Box
+                    component="ul"
+                    sx={{
+                      pl: 2,
+                      m: 0,
+                      color: "text.secondary",
+                      fontSize: "0.9rem",
+                    }}
+                  >
+                    {item.points.slice(0, 2).map((point, i) => (
+                      <li key={i} style={{ marginBottom: 6 }}>
+                        {point}
+                      </li>
+                    ))}
+                  </Box>
+                </CardContent>
+
+                <CardActions
+                  sx={{
+                    justifyContent: "space-between",
+                    px: 2,
+                    pb: 2,
+                  }}
+                >
+                  <Button size="small">Share</Button>
+                  <Button size="small" variant="contained">
+                    Learn More
+                  </Button>
+                </CardActions>
+              </Card>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 }
