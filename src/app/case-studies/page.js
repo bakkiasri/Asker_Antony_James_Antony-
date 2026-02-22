@@ -134,7 +134,7 @@ export default function CaseStudies() {
   ];
 
   return (
-    <section className="py-10">
+    <section className="py-10 ">
       <div className="max-w-7xl mx-auto px-4">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl text-orange-500 font-bold text-center mb-12">
@@ -146,13 +146,13 @@ export default function CaseStudies() {
           {caseStudies.map((item, index) => (
             <div
               key={index}
-              className="bg-white  shadow-md hover:shadow-xl transition duration-300 flex flex-col"
+              className="bg-white  shadow-lg hover:shadow-xl transition duration-300 flex flex-col"
             >
               {/* Image */}
               <img
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
                 alt={item.title}
-                className="h-52 w-full object-cover "
+                className="h-52 w-full object-cover"
               />
 
               {/* Content */}

@@ -68,7 +68,7 @@ const softwarePlatforms = [
 // ===== COMPONENT =====
 export default function ResumePage() {
   return (
-    <main className="bg-white text-[#2b2b2b]">
+    <main className="bg-black   text-white">
       {/* ===== Header Section ===== */}
       <section
         className="relative py-24 text-center"

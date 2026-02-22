@@ -1,1 +1,38 @@
 @import "tailwindcss";
+.body {
+  background-color: black;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 1.5s ease forwards;
+}
+@keyframes blink {
+  0%,
+  50%,
+  100% {
+    border-color: white;
+  }
+  25%,
+  75% {
+    border-color: transparent;
+  }
+}
+/* Hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

@@ -16,7 +16,7 @@ import { GrLinkedin } from "react-icons/gr";
 
 const SSlide = () => {
   return (
-    <section className="w-full h-full">
+    <section className="w-full bg-black h-full py-7">
       <div className="relative flex flex-col md:flex-row justify-center items-center md:items-start px-5 md:px-0">
         {/* IMAGE */}
         <motion.div

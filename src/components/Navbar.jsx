@@ -21,12 +21,15 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
+    <nav className="bg-black/90 shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
         {/* TOP BAR */}
         <div className="flex justify-between items-center h-16">
           {/* LOGO / BRAND */}
-          <Link href="/" className="flex items-center font-extrabold text-2xl">
+          <Link
+            href="/"
+            className="flex text-white items-center font-extrabold text-2xl"
+          >
             {/* Replace with image if needed */}
             {/* <Image src="/logo.png" alt="Logo" width={120} height={40} /> */}
             My Portfolio
