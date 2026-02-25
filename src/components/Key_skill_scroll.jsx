@@ -58,7 +58,7 @@ export default function KeySkillStatic() {
           }}
         >
           {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/75 z-0" />
+          <div className="absolute inset-0  z-0" />
 
           <div className="relative z-10 max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center py-16 md:py-20">
             {/* LEFT CONTENT */}

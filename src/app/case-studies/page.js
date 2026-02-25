@@ -146,7 +146,7 @@ export default function CaseStudies() {
           {caseStudies.map((item, index) => (
             <div
               key={index}
-              className="bg-white  shadow-lg hover:shadow-xl transition duration-300 flex flex-col"
+              className="bg-[#1A1A1B] shadow-lg hover:shadow-xl hover:border-2 hover:border-orange-500 transition duration-300 flex flex-col"
             >
               {/* Image */}
               <img

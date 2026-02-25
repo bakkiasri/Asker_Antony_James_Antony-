@@ -55,8 +55,8 @@ export default function Navbar() {
                   className={`px-3 py-1 rounded-lg font-semibold transition
                     ${
                       isActive
-                        ? "bg-gray-100 text-gray-900 "
-                        : "text-gray-600 hover:text-gray-900 hover:bg-gray-100"
+                        ? "bg-gray-400/40 text-white "
+                        : "text-white hover:text-gray-900 hover:bg-gray-100"
                     }`}
                 >
                   {item.name}
