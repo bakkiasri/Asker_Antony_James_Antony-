@@ -21,7 +21,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="bg-black/90 shadow-md sticky top-0 z-50">
+    <nav className="bg-[#1A1A1B] shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
         {/* TOP BAR */}
         <div className="flex justify-between items-center h-16">

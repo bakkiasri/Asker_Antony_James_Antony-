@@ -142,34 +142,39 @@ export default function CaseStudies() {
         </h2>
 
         {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {caseStudies.map((item, index) => (
             <div
               key={index}
-              className="bg-[#1A1A1B] shadow-lg hover:shadow-xl hover:border-2 hover:border-orange-500 transition duration-300 flex flex-col"
+              className="bg-[#1A1A1B] shadow-lg rounded-xl hover:shadow-xl  transition duration-300 flex flex-col"
             >
               {/* Image */}
               <img
                 src="https://images.unsplash.com/photo-1556761175-b413da4baf72"
                 alt={item.title}
-                className="h-52 w-full object-cover"
+                className="h-52 w-full object-cover rounded-xl"
               />
 
               {/* Content */}
-              <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-lg font-semibold mb-4">{item.title}</h3>
+              <div className="p-5 flex flex-col flex-grow">
+                <h3 className="text-gray-300 text-xl font-semibold mb-4">
+                  {item.title}
+                </h3>
 
-                <ul className="text-gray-600 text-sm list-disc pl-5 space-y-2 flex-grow">
+                <ul className="text-gray-300 text-lg space-y-2 flex-grow">
                   {item.points.slice(0, 2).map((point, i) => (
-                    <li key={i}>{point}</li>
+                    <div>
+                      <h3 className="text-orange-500 text-2xl font-semibold ">
+                        {" "}
+                        Principle{" "}
+                      </h3>
+                      <div>{point}</div>
+                    </div>
                   ))}
                 </ul>
 
                 {/* Buttons */}
                 <div className="flex justify-between items-center mt-6">
-                  <button className="text-blue-600 text-sm font-medium hover:underline">
-                    Share
-                  </button>
                   <button className="bg-orange-500 text-white text-sm px-4 py-2 rounded-md hover:bg-orange-400 cursor-pointer transition">
                     Learn More
                   </button>
