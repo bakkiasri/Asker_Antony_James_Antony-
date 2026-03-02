@@ -2,44 +2,123 @@
 
 const caseStudyData = [
   {
-    title: "ZON \n ZON TEA",
-    subtitle: "Bubble Tea Shop",
-    intro:
-      "A new bubble tea brand was entering a competitive market full of similar concepts.",
-    challenge:
-      "Create a visual identity and communication tools that clearly differentiate the brand.",
-    solutions: [
-      "Designed a distinctive brand identity with a playful mascot.",
-      "Created a clear, illustrative menu.",
-      "Developed a franchise presentation.",
-      "Achieved strong customer growth in the first month.",
-    ],
+    title: "1. Strategic Architecture (The Strategy Kernel)",
+    subtitle: `I don't believe in "strategy-in-a-can." I build growth on a Kernel of Strategy: a cold-eyed diagnosis of the market, a guiding policy for budget allocation, and a set of coherent actions.`,
+    intro_one: {
+      title: `STARS Portfolio Management`,
+      content: `I diagnose which stage a brand is in Start-up, Turnaround, Accelerated Growth, Realignment, or Sustaining Success to match the right management style to the situation.`,
+    },
+    intro_two: {
+      title: `P&L Ownership`,
+      content: `I take full responsibility for the bottom line, managing DME, COGS, and pricing to protect a 20–25% profit margin.`,
+    },
+    intro_three: {
+      title: `Competitive Benchmarking`,
+      content: `Using tools like Helium 10 and Keepa, I build data pipelines to monitor margin guardrails and capture market share.`,
+    },
   },
   {
-    title: "DIGITAL \n ANALYTICS HUB",
-    subtitle: "Reporting Platform",
-    intro:
-      "A centralized analytics system was required to streamline reporting.",
-    challenge: "Reports were fragmented and lacked real-time insights.",
-    solutions: [
-      "Built unified dashboards.",
-      "Automated weekly reports.",
-      "Implemented KPI tracking.",
-      "Reduced reporting time by 40%.",
-    ],
+    title: "2. Omnichannel Growth (The Hook & STEPPS)",
+    subtitle: `Scaling a brand requires more than just ads; it requires building mental and physical availability through habit-forming experiences.`,
+    intro_one: {
+      title: `The Hook Model`,
+      content: `I design digital experiences that move users through Triggers, Action, Variable Rewards, and Investment, turning first-time buyers into loyalists who provide "stored value" to the brand.`,
+    },
+    intro_two: {
+      title: `STEPPS for Virality`,
+      content: ` I apply the principles of Social Currency, Triggers, Emotion, and Practical Value to ensure our brand messaging is contagious and worth talking about.`,
+    },
   },
   {
-    title: "ECOM \n GROWTH",
-    subtitle: "E-Commerce Optimization",
-    intro:
-      "An online retail brand needed improved conversion and better targeting.",
-    challenge: "Low conversion rates and unclear user behavior limited growth.",
-    solutions: [
-      "Optimized landing pages.",
-      "Improved checkout experience.",
-      "Enhanced SEO visibility.",
-      "Increased conversions by 25%.",
-    ],
+    title: "3. High-Leverage Leadership (The Multiplier Effect)",
+    subtitle: `My goal is to be a Multiplier, not a Diminisher. I focus on increasing the Managerial Leverage of my team to ensure our collective output far exceeds the sum of our individual parts.`,
+    intro_one: {
+      title: `Talent Magnetism`,
+      content: `I identify the Native Genius of my team members, giving them challenges that are "a size too big" to force growth while removing "blockers" that stifle intelligence.`,
+    },
+    intro_two: {
+      title: `Task-Relevant Maturity (TRM)`,
+      content: `I adjust my leadership style based on an individual's TRM providing high structure for new tasks and minimal monitoring for experts to maximize efficiency.`,
+    },
+    intro_three: {
+      title: `Cross-Functional Alignment`,
+      content: `I break down silos between marketing, sales, and supply chain, aligning everyone around shared OKRs (Objectives and Key Results).`,
+    },
+  },
+  {
+    title: "4. Data-Driven Optimization (The Growth Cycle)",
+    subtitle: `I run a High-Tempo Experimentation machine. We don't guess; we test, analyze, and scale what works.`,
+    intro_one: {
+      title: ` ICE Scoring`,
+      content: `I prioritize marketing ideas based on Impact, Confidence, and Ease to ensure we are always focused on the "Big Rocks" that move the needle.`,
+    },
+    intro_two: {
+      title: ` A/B & Multivariate Testing`,
+      content: `I constantly iterate on headlines, images, and "Hook Rates" to optimize ad spend across Meta, Google, and Amazon DSP.`,
+    },
+    intro_three: {
+      title: `SEO & Content Mastery`,
+      content: `I implement technical SEO roadmaps that consistently put our branded keywords on the first page of search results`,
+    },
+  },
+  {
+    title: "5. Technical Tech Stack",
+    subtitle: `I don't believe in "strategy-in-a-can." I build growth on a Kernel of Strategy: a cold-eyed diagnosis of the market, a guiding policy for budget allocation, and a set of coherent actions.`,
+    intro_one: {
+      title: `Platforms`,
+      content: `Amazon Seller Central, Shopify Plus, Walmart Seller Central, Meta Business Suite, Google Ads.`,
+    },
+    intro_two: {
+      title: `Intelligence`,
+      content: `Tableau, Power BI, Helium 10, Google Analytics 4,  Microsoft Access.`,
+    },
+    intro_three: {
+      title: `Creative`,
+      content: `Adobe Creative Suite (Photoshop, Illustrator, InDesign), Canva, Figma.`,
+    },
+  },
+  {
+    title: "6. Brand Strategy & Portfolio Management",
+    subtitle: `Brand positioning | Portfolio & SKU lifecycle management | Hero SKU development | NPD & launches | Packaging & creative direction`,
+    intro_one: {
+      title: `Omnichannel Marketing Strategy | GTM Planning & commercialization | Portfolio role strategy`,
+    },
+    intro_two: {
+      title: `Customer Acquisition & Retention (LTV Optimization) | CRM Lifecycle Automation | Budget & Forecast Ownership`,
+    },
+  },
+  {
+    title: "7. Integrated Marketing & Connections Planning",
+    intro_one: {
+      title: `Annual brand plan development | IMC/360° campaigns (digital, retail, influencer, CRM) | Retail & trade marketing | Channel mix & media optimization | Omnichannel retail & marketplace strategy`,
+    },
+  },
+  {
+    title: "8. Consumer Insights & Analytics",
+    intro_one: {
+      title: `Consumer and shopper insights | Category & competitive analysis | KPI dashboarding | A/B testing | Forecasting & demand planning | Customer Segmentation & Insights `,
+    },
+  },
+  {
+    title: "9. Commercial & P&L Ownership",
+    intro_one: {
+      title: `P&L management | Pricing & promo strategy | DME/budget stewardship | Retailer sell-in & sell-through support | Inventory & margin optimization`,
+    },
+  },
+  {
+    title: "10. Leadership & Cross-Functional Collaboration",
+    intro_one: {
+      title: `Team leadership | Agency & vendor management | Sales, supply chain & operations alignment | Executive reporting`,
+    },
+  },
+  {
+    title: "11. Digital & Performance Marketing",
+    intro_one: {
+      title: `E-Commerce (Shopify Plus, Amazon, Walmart, WooCommerce) | Paid Media (Meta, Google, TikTok, LinkedIn Ads)`,
+    },
+    intro_two: {
+      title: `SEO/SEM | Influencer & Affiliate Marketing | Content & Conversion Optimization | Marketplace Management`,
+    },
   },
 ];
 
@@ -50,56 +129,57 @@ export default function KeySkillStatic() {
         <section
           key={index}
           className="relative min-h-screen w-full flex items-center justify-center px-4 sm:px-6 lg:px-10"
-          style={{
-            backgroundImage: "url('/images/key_skill.png')",
-            backgroundAttachment: "fixed",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
         >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0  z-0" />
-
           <div className="relative z-10 max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 lg:gap-16 items-center py-16 md:py-20">
             {/* LEFT CONTENT */}
-            <div className="order-2 md:order-1 h-auto md:h-[70vh] overflow-visible md:overflow-y-auto pr-0 md:pr-4 space-y-6 md:space-y-8">
-              {/* Intro + Challenge */}
-              <div className="bg-white p-6 sm:p-8 shadow-xl rounded-lg">
-                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                  {data.intro}
-                </p>
-
-                <h3 className="mt-6 font-bold text-base sm:text-lg">
-                  CHALLENGE
-                </h3>
-                <div className="w-10 h-[2px] bg-red-500 mt-1 mb-4"></div>
-
-                <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                  {data.challenge}
-                </p>
-              </div>
-
-              {/* Solutions */}
-              <div className="bg-white p-6 sm:p-8 shadow-xl rounded-lg">
-                <h3 className="font-bold text-base sm:text-lg">SOLUTIONS</h3>
-                <div className="w-10 h-[2px] bg-red-500 mt-1 mb-4"></div>
-
-                <ul className="text-gray-600 space-y-3 list-disc pl-5 text-sm sm:text-base">
-                  {data.solutions.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
+            <div className="order-2 md:order-1 h-auto md:h-[70vh] flex flex-col justify-center items-center overflow-visible md:overflow-y-auto pr-0 md:pr-4 space-y-6 md:space-y-8">
+              {" "}
+              {/* Card 1 */}
+              {data.intro_one ? (
+                <div className="bg-white p-6 sm:p-8 shadow-xl rounded-lg">
+                  <h3 className="font-bold text-base sm:text-lg">
+                    {data.intro_one.title}
+                  </h3>
+                  <div className="w-10 h-[2px] bg-red-500 mt-1 mb-4"></div>
+                  <p className="text-gray-900 leading-relaxed text-sm sm:text-base">
+                    {data.intro_one.content}
+                  </p>
+                </div>
+              ) : null}
+              {/* Card 2 */}
+              {data.intro_two ? (
+                <div className="bg-white p-6 sm:p-8 shadow-xl rounded-lg">
+                  <h3 className="font-bold text-base sm:text-lg">
+                    {data.intro_two.title}
+                  </h3>
+                  <div className="w-10 h-[2px] bg-red-500 mt-1 mb-4"></div>
+                  <p className="text-gray-900 leading-relaxed text-sm sm:text-base">
+                    {data.intro_two.content}
+                  </p>
+                </div>
+              ) : null}
+              {/* Card 3 */}
+              {data.intro_three ? (
+                <div className="bg-white p-6 sm:p-8 shadow-xl rounded-lg">
+                  <h3 className="font-bold text-base sm:text-lg">
+                    {data.intro_three.title}
+                  </h3>
+                  <div className="w-10 h-[2px] bg-red-500 mt-1 mb-4"></div>
+                  <p className="text-gray-900 leading-relaxed text-sm sm:text-base">
+                    {data.intro_three.content}
+                  </p>
+                </div>
+              ) : null}
             </div>
 
             {/* RIGHT TITLE */}
             <div className="order-1 md:order-2 text-center md:text-right text-white">
-              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black whitespace-pre-line leading-none tracking-tight">
-                {data.title}
+              <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black [text-shadow:0_25px_50px_rgba(0,0,0,0.9)] whitespace-pre-line leading-none tracking-tight">
+                {data?.title}
               </h1>
 
-              <p className="text-red-500 font-bold uppercase tracking-[0.3em] sm:tracking-[0.5em] mt-4 text-xs sm:text-sm">
-                {data.subtitle}
+              <p className="text-red-900 font-bold uppercase mt-4 text-sm sm:text-md">
+                {data?.subtitle}
               </p>
             </div>
           </div>

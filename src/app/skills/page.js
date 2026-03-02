@@ -8,10 +8,6 @@ export default function KeySkills() {
   const [stage, setStage] = useState(0);
   const sentence = "Transforming Strategy Into Scalable Growth...";
 
-  // 0 = intro center
-  // 1 = move up
-  // 2 = show main content
-
   useEffect(() => {
     const timer1 = setTimeout(() => setStage(1), 3000); // move up
     const timer2 = setTimeout(() => setStage(2), 4200); // show content after animation
@@ -75,14 +71,7 @@ export default function KeySkills() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          {/* <div className="bg-black  mx-auto  ">
-            <h2 className="text-6xl text-white font-bold text-center py-24 px-6">
-              Key Skills
-            </h2>
-          </div> */}
-
           <div className="">
-            {/* <Key_skill_parallax /> */}
             <KeySkillScroll />
           </div>
         </motion.div>
