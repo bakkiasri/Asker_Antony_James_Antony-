@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 const caseStudyData = [
   {
@@ -121,7 +122,17 @@ const caseStudyData = [
     },
   },
 ];
-
+const logos = [
+  "/images/logos/Figma-logo.svg.png",
+  "/images/logos/Canva_logo.svg.png",
+  "/images/logos/Adobe_Photoshop_CC_icon.svg.png",
+  "/images/logos/Adobe_Illustrator_CC_icon.svg.png",
+  "/images/logos/Adobe_Premiere_Pro_CC_icon.svg.png",
+  "/images/logos/Google_Ads_logo.svg.png",
+  "/images/logos/Amazon_ads_logo_2x.png",
+  "/images/logos/Microsoft-Power-BI-Symbol.png",
+  "/images/logos/Sem rush.png",
+];
 export default function KeySkillStatic() {
   return (
     <div className="relative w-full bg-black">
@@ -185,6 +196,31 @@ export default function KeySkillStatic() {
           </div>
         </section>
       ))}
+      {/* LOGO SECTION */}
+      <section className="w-full py-24 bg-black border-t border-gray-800">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-white text-4xl font-bold text-center mb-16">
+            Platforms & Tools
+          </h2>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10 items-center">
+            {logos.map((logo, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center hover:scale-110 transition duration-300"
+              >
+                <Image
+                  src={logo}
+                  alt="logo"
+                  width={120}
+                  height={60}
+                  className="object-contain grayscale hover:grayscale-0"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
